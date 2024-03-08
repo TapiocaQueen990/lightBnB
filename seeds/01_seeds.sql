@@ -1,12 +1,12 @@
 INSERT INTO users (name, email, password)
-VALUES ("Kevin Lee", "kevinlee@gmail.com", "$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u."),
-("dev henry", "devhenry@hotmail.com", "$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u."),
-("rai le", "bowlcut@hotmail.com", "$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.");
+VALUES ('Kevin Lee', 'kevinlee@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'),
+('dev henry', 'devhenry@hotmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'),
+('rai le', 'bowlcut@hotmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.');
 
 INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, city, province, post_code, active) 
-VALUES (1, 'Cozy Cabin Retreat', description, 'https://example.com/thumbnail.jpg', 'https://example.com/cover.jpg', 100, 2, 1, 2, 'United States', '123 Main St', 'Anytown', 'Anyprovince', '12345', TRUE),
-(2, 'Luxury Villa', description, 'https://example.com/thumbnail.jpg', 'https://example.com/cover.jpg', 500, 3, 4, 5, 'France', '456 Ocean Blvd', 'Seaside City', 'Someprovince', '54321', TRUE),
-(3, 'Modern City Apartment', description, 'https://example.com/thumbnail.jpg', 'https://example.com/cover.jpg', 200, 1, 1, 1, 'United Kingdom', '789 High St', 'Metropolis', 'Someprovince', '67890', TRUE);
+VALUES (1, 'Cozy Cabin Retreat', 'description', 'https://example.com/thumbnail.jpg', 'https://example.com/cover.jpg', 100, 2, 1, 2, 'United States', '123 Main St', 'Anytown', 'Anyprovince', '12345', TRUE),
+(2, 'Luxury Villa', 'description', 'https://example.com/thumbnail.jpg', 'https://example.com/cover.jpg', 500, 3, 4, 5, 'France', '456 Ocean Blvd', 'Seaside City', 'Someprovince', '54321', TRUE),
+(3, 'Modern City Apartment', 'description', 'https://example.com/thumbnail.jpg', 'https://example.com/cover.jpg', 200, 1, 1, 1, 'United Kingdom', '789 High St', 'Metropolis', 'Someprovince', '67890', TRUE);
 
 INSERT INTO reservations (start_date, end_date, property_id, guest_id)
 VALUES ('2018-09-11', '2018-09-26', 1, 1),
@@ -15,6 +15,6 @@ VALUES ('2018-09-11', '2018-09-26', 1, 1),
 
 
 INSERT INTO property_reviews (guest_id, property_id, reservation_id, rating, message)
-VALUES (1, 1, 1, 5, message),
-(2, 2, 2, 5, message),
-(3, 3, 3, 5, message);
+VALUES (1, 1, 1, 5, 'message'),
+(2, 2, 2, 5, 'message'),
+(3, 3, 3, 5, 'message');
